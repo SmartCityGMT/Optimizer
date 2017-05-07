@@ -77,7 +77,8 @@ qual_spots = []
 #Calculate walking times
 walking_calcs = {}
 for spot in all_spots.keys():
-	gmaps = googlemaps.Client(key = 'AIzaSyAQb1Cyy5WwtHm4SzUdcANxrYe4AIvJjzU')
+    #insert personal api key below
+	gmaps = googlemaps.Client(key = '')
 	dest_lat = all_spots[spot][0]
 	dest_lng = all_spots[spot][1]
 	orig_coord = orig_lat, orig_lng
